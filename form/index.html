@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body bgcolor="#f2f2f2">
+    <center>
+        <img src="saylani logo.png" width="300" height="auto" alt="Saylani Logo" >
+        <h2>Saylani Online Academy</h2>
+    </center>
+
+    <form action="submit.html" method="get" enctype="multipart/form-data">
+        <table align="center" cellpadding="10" bgcolor="#d3d3d3">
+            <tr>
+                <th colspan="2" >
+                    <font size="5" >Student Registration Form</font></th>
+            </tr>
+
+            <tr>
+                <td width="29%"><label for="name">Name:</label></td>
+                <td width="75%"><input type="text" name="name" id="name" style="width:63%;" placeholder="Name" required></td>
+            </tr>            
+            
+            <tr>
+                <td width="29%">Father Name:</td>
+                <td><input type="text" name="father_name" style="width:63%;" placeholder="Father Name" required></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" style="width:63%;" placeholder="*********" required></td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address" rows="4" cols="40" style="width:63%;" placeholder="Address" required></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="Male" required> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Language:</td>
+                <td>
+                    <input type="checkbox" name="language[]" value="Urdu"> Urdu
+                    <input type="checkbox" name="language[]" value="English"> English
+                    <input type="checkbox" name="language[]" value="Arabic"> Arabic
+                    <input type="checkbox" name="language[]" value="Chinese"> Chinese
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth (DOB):</td>
+                <td><input type="date" name="dob" required></td>
+            </tr>
+
+            <tr>
+                <td>Email ID:</td>
+                <td><input type="email" name="email" style="width:63%;" placeholder="Email ID" required></td>
+            </tr>
+
+            <tr>
+                <td>Mobile Number:</td>
+                <td><input type="text" name="mobile" maxlength="15" placeholder="Mobile number" required></td>
+            </tr>
+
+            <tr>
+                <td>City:</td>
+                <td>
+                    <select name="city" required>
+                        <option value="">Select Your City</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Peshawar">Peshawar</option>
+                        <option value="Quetta">Quetta</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <select name="hobbies[]" multiple size="4">
+                        <option value="Cricket">Cricket</option>
+                        <option value="Football">Football</option>
+                        <option value="Hockey">Hockey</option>
+                        <option value="Tennis">Tennis</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Picture Upload:</td>
+                <td>
+                    <input type="file" name="picture">
+                    <input type="button" value="Upload Picture">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit Form">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
